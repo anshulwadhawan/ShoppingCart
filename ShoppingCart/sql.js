@@ -2,7 +2,6 @@
  * Created by anshul on 14/7/17.
  */
 var mysql=require('mysql');
-
 var dbconfig={
     host:'localhost',
     user:'anshul',
@@ -14,8 +13,6 @@ items[0]=0;
 items[1]=0;
 items[2]=0;
 items[3]=0;
-
-
 function add(id,cb){
     var connection=mysql.createConnection(dbconfig);
     connection.connect();
@@ -29,7 +26,6 @@ function add(id,cb){
         })
     })
 }
-
 module.exports={
     add
 }
